@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "vpn-sync",
+  "version": "0.1.0",
+  "description": "Makes your browser's timezone, language and hardware hints match your VPN's IP.",
+  "permissions": ["storage", "scripting", "webNavigation", "declarativeNetRequest", "privacy", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "vpn-sync" }
+}
